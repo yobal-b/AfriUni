@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"> <img src="images/icons8-chile-university-48.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Africa's Biggest University</h1>
+    <p>A place where you can achieve anything you want!</p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+</div>    
+</section>
+
+
+<!-----Course----->
+
+<section class="course">
+    <h1>Courses we offer</h1>
+    <div class="row">
+        <div class="course-col">
+            <h3>Bachelor's</h3>
+            <p>A bachelor's degree is an undergraduate qualification awarded by colleges and universities, typically following a three- to four-year program of study. It is often the first major step for students pursuing a professional career, providing foundational knowledge and skills in a specific field, known as a "major". </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Master's</h3>
+            <p>A master's degree is a postgraduate academic qualification that demonstrates advanced knowledge in a specialized field. It is pursued after completing a bachelor's degree and typically involves a higher level of critical thinking, research, and analysis.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>PhD</h3>
+            <p>A Doctor of Philosophy (PhD) is the highest-level academic degree awarded by a university. The degree is based on original, significant research that creates new knowledge in a specific field. While the name includes "philosophy," it applies to a wide range of disciplines, from sciences to humanities. </p>
+        </div>
+    </div>
+</section>
+
+<!--Campus-->
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/abiy-temesgen-PxxCP7JwAeg-unsplash.jpg">
+            <div class="layer">
+                <h3>Addis Ababa</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="images/oussama-rahib-yRS86M8g-zo-unsplash.jpg">
+            <div class="layer">
+                <h3>Casablanca</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="images/brendin-hoffman-JKD3DsYE9As-unsplash.jpg">
+            <div class="layer">
+                <h3>Johannesburg</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Facilities -->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/drahomir-hugo-posteby-mach-OL2FkTjKD6w-unsplash.jpg">
+            <h3>World-Class Library</h3>
+        </div>  
+
+        <div class="facilities-col">
+            <img src="images/krzhck-H1PE-TiC420-unsplash.jpg">
+            <h3>Large Playground</h3>
+        </div>  
+
+        <div class="facilities-col">
+            <img src="images/valentin-ciccarone-YMihlfY0wcE-unsplash.jpg">
+            <h3>Tasty and healthy foods</h3>
+        </div>  
+
+
+    </div>
+
+</section>
+
+
+<!-- Testimonials -->
+
+<section class="testimonial">
+    <h1>What Our Students Say</h1>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/oluwaferanmi-caleb-Q1QRTSeZIxI-unsplash.jpg">
+            <p>“Studying at this university has completely changed the way I think.
+            The professors don’t just lecture—they challenge you to ask questions and approach problems creatively.
+            I entered as a shy first-year student, and now I feel confident presenting projects, leading group discussions, and applying what I learn in real life.”</p>
+            <h3>Emmanuela Mark</h3>
+        </div>
+
+        <div class="testimonial-col">
+            <img src="images/brivel-bariki-W12rukDSuxc-unsplash.jpg">
+            <p>I expected university to be stressful, but here I found a supportive community.
+                The modern labs, open library spaces, and friendly campus environment make studying enjoyable.
+                Every day feels like progress—not just academically, but personally.”</p>
+            
+            <h3>Jay Jay Okocha</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- call for action -->
+
+<section class="cta">
+    <h1>Enroll For Our Various Online Courses<br>Anywhere From The World.</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+
+</section>
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us<h4>
+    <p>Our university is committed to shaping the next generation of innovators, leaders, and problem solvers. <br>
+        We provide high-quality education, modern facilities, and a learning environment <br> that encourages creativity, curiosity, and critical thinking.</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+
+    </div>
+</section>
+
+<!--JavaScript for the toggle menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>    
+</body>
+</html>
