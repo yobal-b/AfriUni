@@ -1,0 +1,2 @@
+# AfriUni
+A university website
